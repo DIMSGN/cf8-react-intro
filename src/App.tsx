@@ -7,11 +7,12 @@
 // import ArrowFunctionalComponentsWithPropsType from "./components/ArrowFunctionalComponentsWithPropsType.tsx";
 // import Card from "./components/Card.tsx";
 import Layout from "./components/Layout.tsx";
+import NameChanger from "./components/NameChanger.tsx";
 //import FunctionalComponent from "./components/FunctionalComponent.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 //import ClassComponent from "./components/ClassComponent.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
-import Counter from "./components/Counter.tsx";
+// import Counter from "./components/Counter.tsx";
 
 function App() {
 
@@ -43,7 +44,8 @@ function App() {
 
             {/*<FunctionalComponentWithState/>*/}
             {/*<ClassComponentWithState/>*/}
-            <Counter/>
+            {/*<Counter/>*/}
+            <NameChanger/>
         </Layout>
     </>
   )
