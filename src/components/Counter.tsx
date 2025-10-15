@@ -1,4 +1,5 @@
 import {useState} from "react";
+import CounterButton from "./CounterButton.tsx";
 
 const Counter = () => {
     const [count, setCount] = useState(0);
@@ -19,23 +20,19 @@ const Counter = () => {
 
                 <div className="text-center space-x-4">
 
-                    <button className="bg-cf-dark-grey text-white px-4 py-2 rounded"
-                            onClick={increaseCount}>
-                        Increase
-                    </button>
+                    <CounterButton onClick={increaseCount}
+                                   label={"Increase"}
+                                   />
 
-                    <button className="bg-cf-dark-grey text-white px-4 py-2 rounded"
-                            onClick={decreaseCount}
-                            disabled={count === 0}
-                    >
-                        Decrease
-                    </button>
-                    <button className="bg-cf-dark-grey text-white px-4 py-2 rounded"
-                            onClick={resetCount}
-                           disabled={count === 0}
-                    >
-                        Reset
-                    </button>
+                    <CounterButton onClick={decreaseCount}
+                                      label={"Decrease"}
+                                   disabled={count === 0}
+                                   />
+                    <CounterButton onClick={resetCount}
+                                    label={"Reset"}
+                                    disabled={count === 0}
+                                   addClass={"bg-cf-dark-red disabled:bg-red-500"}
+                                    />
                 </div>
             </>
     )
