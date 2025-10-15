@@ -14,7 +14,6 @@ const CounterButton = ({onClick, disabled = false, label, addClass = ""}: Button
                 {label}
             </button>
         </>
-
     )
 }
 export default CounterButton;
