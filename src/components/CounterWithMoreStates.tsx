@@ -1,7 +1,7 @@
 import {useState} from "react";
 import CounterButton from "./CounterButton.tsx";
 
-const Counter = () => {
+const CounterWithMoreStates = () => {
     const [count, setCount] = useState(0);
     const [lastAction, setLastAction] = useState("");
     const [time, setTime] = useState("");
@@ -53,4 +53,4 @@ const Counter = () => {
     )
 }
 
-export default Counter;
+export default CounterWithMoreStates;
